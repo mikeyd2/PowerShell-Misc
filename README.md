@@ -14,6 +14,8 @@ Smaller scripts and functions I've made repeated use of. Time-savers, quality-of
 
 - **Get-EmptyADGroups.ps1**: Search the domain for any groups with no members. Groups are processed in batches to avoid performance issues with logs generated continuously as empties are found. The creation and last change timestamps are also recorded.   
 
+- **Get-AccessReport.ps1**: Filters AD User objects by the specified property & value then generates a clean, lightweight access summary for those users; report details all groups accessed granted to at least one of the users in the set, the quantity and SAM Account Names of those users having access, as well as the domain of the group. Handy for quickly determining "easy wins" when tidying up privileges accumulated among a large plurality of users. 
+
 ## Usage
 
 Goes nicely in a moudule and loaded into the shell session on start-up. 
